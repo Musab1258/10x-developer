@@ -14,15 +14,15 @@ function App() {
       <body className='m-5'>
         <div className='m-16 p-5 text-xl border-2 rounded shadow-lg'>
           <p>Learning software development can be hard at the beginning</p>
-          <img src={HardTime} />
+          <img src={HardTime} alt="A woman having a hard time in front of her laptop" />
         </div>
         <div className='m-16 p-5 text-xl border-2 rounded shadow-lg'>
           <p>There are a lot of tools and technologies to learn</p>
-          <img src={ProgrammingTools} />
+          <img src={ProgrammingTools} alt="logos of different programming languages and tools"/>
         </div>
         <div className='m-16 p-5 text-xl border-2 rounded shadow-lg'>
           <p>And sometimes, you need an experienced Developer to guide you.</p>
-          <img src={MentorGuide} />
+          <img src={MentorGuide} alt="a senior software developer guiding her junior"/>
         </div>
         <div className='m-16 p-5 text-xl border-2 rounded shadow-lg'>
           <p className='my-5'>I am an experienced Frontend Developer and I have got friends in other areas of software development that can help out.</p>
