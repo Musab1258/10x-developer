@@ -5,7 +5,6 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Schedule from './components/Schedule';
-import Chat from './components/Chat';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -13,7 +12,6 @@ ReactDOM.render(
       <Routes>
         <Route path='/' element={ <App /> } />
         <Route path='Schedule' element={ <Schedule /> } />
-        <Route path='Chat' element={ <Chat /> } />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

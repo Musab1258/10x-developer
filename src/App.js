@@ -18,7 +18,7 @@ function App() {
         </div>
         <div className='m-16 p-5 text-xl border-2 rounded shadow-lg'>
           <p>There are a lot of tools and technologies to learn</p>
-          <img src={ProgrammingTools} alt="logos of different programming languages and tools"/>
+          <img className='w-full' src={ProgrammingTools} alt="logos of different programming languages and tools"/>
         </div>
         <div className='m-16 p-5 text-xl border-2 rounded shadow-lg'>
           <p>And sometimes, you need an experienced Developer to guide you.</p>
