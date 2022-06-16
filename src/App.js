@@ -12,17 +12,17 @@ function App() {
         <Nav />
       </header>
       <body className='m-5'>
-        <div className='m-16 p-5 text-xl border-2 rounded shadow-lg'>
-          <p>Learning software development can be hard at the beginning</p>
+        <div className='my-16 mx-5 p-5 lg:flex text-xl border-2 rounded shadow-lg'>
           <img src={HardTime} alt="A woman having a hard time in front of her laptop" />
+          <p>Learning software development can be hard at the beginning</p>
         </div>
-        <div className='m-16 p-5 text-xl border-2 rounded shadow-lg'>
-          <p>There are a lot of tools and technologies to learn</p>
+        <div className='my-16 mx-5 p-5 lg:flex text-xl border-2 rounded shadow-lg'>
           <img className='w-full' src={ProgrammingTools} alt="logos of different programming languages and tools"/>
+          <p>There are a lot of tools and technologies to learn</p>
         </div>
-        <div className='m-16 p-5 text-xl border-2 rounded shadow-lg'>
-          <p>And sometimes, you need an experienced Developer to guide you.</p>
+        <div className='my-16 mx-5 p-5 lg:flex text-xl border-2 rounded shadow-lg'>
           <img src={MentorGuide} alt="a senior software developer guiding her junior"/>
+          <p>And sometimes, you need an experienced Developer to guide you.</p>
         </div>
         <div className='m-16 p-5 text-xl border-2 rounded shadow-lg'>
           <p className='my-5'>I am an experienced Frontend Developer and I have got friends in other areas of software development that can help out.</p>
