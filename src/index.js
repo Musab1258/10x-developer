@@ -7,7 +7,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Schedule from './components/Schedule';
 
 ReactDOM.render(
-  <React.StrictMode className={max-w-screen-md}>
+  <React.StrictMode>
     <BrowserRouter>
       <Routes>
         <Route path='/' element={ <App /> } />
