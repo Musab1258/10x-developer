@@ -19,21 +19,33 @@ const Form = () => {
         });
     }
     return (
-        <form className='flex  flex-col justify-items-center items-center' ref={form} onSubmit={sendEmail} >
-            <label className="">
-                <p>Name</p>
-                <input name='user_name' className='border w-auto' placeholder="Enter your name here" />
+      <div className='w-full max-w-xs'>
+        <form className='bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 mt-4' ref={form} onSubmit={sendEmail} >
+          <div className="mb-4">
+            <label className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+                Name
             </label>
+            <input name='user_name' className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' placeholder="Enter your name here" />
+          </div>
+          <div className="mb-4">
             <label>
-                <p>Email Address</p>
-                <input name='user_email' className='border w-auto' placeholder="Enter your email address here" />
+                Email Address
             </label>
+            <input name='user_email' className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' placeholder="Enter your email address here" />
+          </div>
+          <div className="mb-4">
             <label>
-                <p>What do you want us to discuss</p>
-                <textarea name='message' className='border w-auto'/>
+              What do you want us to discuss
             </label>
-            <button type='submit' className='border w-auto'>Send</button>
+            <textarea name='message' className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'/>
+            </label>
+          </div>
+          <div className='flex items-center justify-between'>
+            <button type='submit' className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline'>Send</button>
+            <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline'>Cancel</button>
+          </div>
         </form>
+      </div>
     )
 }
 
