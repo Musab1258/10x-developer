@@ -19,7 +19,7 @@ const Schedule = () => {
   } */
 
   return (
-    <div>
+    <div className='bg-light-grey-orange'>
       <Nav />
       <Calendar className="m-auto w-4/5" onClickDay={() => setIsOpen(true)} onChange={onChange} value={value} />
       <div></div>
