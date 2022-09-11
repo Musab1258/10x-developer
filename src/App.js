@@ -7,13 +7,13 @@ import MentorGuide from './images/mentor-guide.png'
 
 function App() {
   return (
-    <div className="bg-light-grey-orange">
+    <div className="bg-light-gray-orange">
       <header>
         <Nav />
       </header>
-      <body className='bg-light-grey-orange m-2 grid md:mt-16 md:mx-12 justify-items-center text-center'>
+      <body className='bg-light-gray-orange m-2 grid md:mt-16 md:mx-12 justify-items-center text-center'>
         <div className='bg-dark-cyan my-16 mx-5 p-5 grid md:grid-cols-2 gap-4 text-xl border-2 rounded shadow-lg'>
-          <img src={HardTime} alt="A woman having a hard time in front of her laptop" />
+          <img src={HardTime} alt="A woman having a hard time in front of her laptop" className='md:h-[350px] w-full' />
           <p className='text-white grid self-center'>Learning software development can be hard at the beginning</p>
         </div>
         <div className='bg-dark-cyan my-16 mx-5 p-5 grid md:grid-cols-2 gap-4 text-xl border-2 rounded shadow-lg'>

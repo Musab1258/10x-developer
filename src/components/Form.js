@@ -19,7 +19,7 @@ const Form = () => {
         });
     }
     return (
-      <div className='w-full max-w-xs'>
+      <div className='w-full'>
         <form className='bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 mt-4' ref={form} onSubmit={sendEmail} >
           <div className="mb-4">
             <label className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
