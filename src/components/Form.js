@@ -1,7 +1,7 @@
 import emailjs from '@emailjs/browser';
 import { useRef } from "react";
 
-const Form = ( setIsOpen ) => {
+const Form = ( isOpen, setIsOpen ) => {
 
     const form = useRef();
     const sendEmail = (e) => {
@@ -41,7 +41,7 @@ const Form = ( setIsOpen ) => {
           </div>
           <div className='flex items-center justify-evenly'>
             <button type='submit' className='bg-light-orange text-white font-bold py-2 w-20 rounded focus:outline-none focus:shadow-outline'>Send</button>
-            <button onClick={() => setIsOpen(false)} className='bg-light-orange text-white font-bold py-2 w-20 rounded focus:outline-none focus:shadow-outline'>Cancel</button>
+            <button onClick={() => setIsOpen(!isOpen)} className='bg-light-orange text-white font-bold py-2 w-20 rounded focus:outline-none focus:shadow-outline'>Cancel</button>
           </div>
         </form>
       </div>

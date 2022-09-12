@@ -19,10 +19,10 @@ const Schedule = () => {
   } */
 
   return (
-    <div className='bg-light-gray-orange'>
+    <div className='min-h-screen bg-light-gray-orange'>
       <Nav />
       <div className='flex flex-col justify-center items-center'>
-        <Calendar className="m-auto w-4/5" onClickDay={() => setIsOpen(true)} onChange={onChange} value={value} />
+        <Calendar className="m-auto w-4/5" onClickDay={() => setIsOpen(!isOpen)} onChange={onChange} value={value} />
         <div></div>
         <section className=''>
           {isOpen && <Form setIsOpen={setIsOpen} />}

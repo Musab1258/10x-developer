@@ -92,7 +92,7 @@ const Nav = () => {
           leaveTo="opacity-0 scale-95"
         >
           {(ref) => (
-            <div className="h-full bg-dark-gray-cyan md:hidden" id="mobile-menu">
+            <div className="h-screen bg-dark-gray-cyan md:hidden" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               <Link
                 to="/"
