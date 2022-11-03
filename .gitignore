@@ -12,6 +12,7 @@
 /build
 
 # misc
+.breakpoints
 .env
 .DS_Store
 .env.local

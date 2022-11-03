@@ -1,14 +1,79 @@
+import { useRef, useEffect} from 'react';
 import Nav from './Nav';
 import HardTime from '../images/hard-time.png';
 import ProgrammingTools from '../images/programming-tools.png';
 import MentorGuide from '../images/mentor-guide.png';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 
 function Home() {
-  
+  gsap.registerPlugin(ScrollTrigger);
+  const ref = useRef(null);
+  useEffect(() => {
+    const element = ref.current;
+    gsap.from( 
+      element.querySelector('#first-div'),
+      {
+        opacity: 0,
+        stagger: 0.2,
+        delay: 1,
+        duration: 1,
+        scale: 0,
+        ease: "bounce",
+      })
+  }, [])
+  useEffect(() => {
+    const element = ref.current;
+    gsap.from( 
+      element.querySelector('#second-div'),
+      {
+        opacity: 0,
+        stagger: 0.2,
+        duration: 1,
+        scale: 0,
+        ease: "bounce",
+        scrollTrigger: {
+          trigger: element.querySelector('#second-div'),
+          scrub: true,
+        },
+    })
+  }, [])
+  useEffect(() => {
+    const element = ref.current;
+    gsap.from( 
+      element.querySelector('#third-div'),
+      {
+        opacity: 0,
+        stagger: 0.2,
+        duration: 1,
+        scale: 0,
+        ease: "bounce",
+        scrollTrigger: {
+          trigger: element.querySelector('#third-div'),
+          scrub: true,
+        },
+    })
+  }, [])
+  useEffect(() => {
+    const element = ref.current;
+    gsap.from( 
+      element.querySelector('#fourth-div'),
+      {
+        opacity: 0,
+        stagger: 0.2,
+        duration: 1,
+        scale: 0,
+        ease: "bounce",
+        scrollTrigger: {
+          trigger: element.querySelector('#fourth-div'),
+          scrub: true,
+        },
+    })
+  }, [])
   
   return (
-    <div className='bg-dark-cyan'>
+    <div ref={ref} className='bg-dark-cyan'>
       <Nav />
       <div className='bg-dark-cyan m-2 grid md:mt-16 md:mx-12 justify-items-center text-center'>
         <div id="first-div" className='my-16 mx-5 p-5 grid md:grid-cols-2 gap-4 text-xl'>
