@@ -21,14 +21,14 @@ const Nav = () => {
                 <div  className="ml-60 flex items-baseline space-x-4">
                   <Link
                     to="/"
-                    className="text-dark-gray-cyan px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Home
                   </Link>
 
                   <Link
                     to="/Schedule"
-                    className="text-dark-gray-cyan px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Schedule
                   </Link>
