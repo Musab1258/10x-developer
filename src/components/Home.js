@@ -75,7 +75,7 @@ function Home() {
   return (
     <div ref={ref} className='bg-dark-cyan'>
       <Nav />
-      <div className='bg-dark-cyan m-2 grid md:mt-16 md:mx-12 justify-items-center text-center'>
+      <div className='bg-dark-cyan m-2 grid md:mt-5 md:mx-12 justify-items-center text-center'>
         <div id="first-div" className='my-16 mx-5 p-5 grid md:grid-cols-2 gap-4 text-xl'>
           <img src={HardTime} alt="A woman having a hard time in front of her laptop" className='md:h-[350px] w-full rounded-3xl' />
           <p className='text-white grid self-center'>Learning software development can be hard at the beginning</p>
